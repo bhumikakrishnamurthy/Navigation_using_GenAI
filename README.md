@@ -1,6 +1,6 @@
 # Navigation_using_GenAI
 
-![Demo](https://github.com/bhumikakrishnamurthy/Navigation_using_GenAI/main/output(1).jpeg)
+![Demo](https://github.com/bhumikakrishnamurthy/Navigation_using_GenAI/output(1).jpeg)
 ---
 
 This is a Python web application that allows users to visualize traffic congestion using a heatmap and find the shortest route between two points. It uses the HERE Traffic API for traffic data and the OpenRouteService API for routing information. The application is built using Flask for the web framework and Folium for map visualization.
