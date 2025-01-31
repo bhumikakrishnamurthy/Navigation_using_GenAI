@@ -1,4 +1,4 @@
-# NAV_AI-Route-generator
+# Navigation_using_GenAI
 
 ![Demo](https://github.com/praTeek271/NAV_AI-Route-generator/blob/master/demo.png)
 ---
@@ -28,16 +28,16 @@ pip install folium flask requests openrouteservice herepy
 
 ## Steps to Use the Project
 
-To use the NAV_AI-Route-generator project, follow these steps:
+To use the Navigation_using_GenAIt, follow these steps:
 
 1. Clone the GitHub project by running the following command in your terminal:
    ```bash
-   git clone https://github.com/praTeek271/NAV_AI-Route-generator.git
+   git clone https://github.com/bhumikakrishnamurthy/Navigation_using_GenAI.git
    ```
 
 2. Navigate to the project directory:
    ```bash
-   cd NAV_AI-Route-generator
+   cd Navigation_using_GenAI
    ```
 
 3. Install the required dependencies by running the following command:
@@ -61,8 +61,8 @@ Open your web browser and go to http://localhost:5000 to access the application.
 ---
 ### Traffic Heatmap:
 
-Enter the latitude and longitude coordinates for a specific area in the input form.
-Click the "Show Traffic Heatmap" button to view the traffic congestion heatmap for the selected area.
+Enter the starting and ending location in the input form.
+Click the "Show EcoRouteMap" button to view the traffic congestion heatmap for the selected area.
 Shortest Route:
 
 Enter the starting and ending coordinates, select a vehicle type (car, bicycle, or foot) from the dropdown menu.
@@ -71,7 +71,7 @@ License
 This project is licensed under the MIT License. See the LICENSE file for details.
 ## About the Project
 
-The NAV_AI-Route-generator project aims to provide route prediction and traffic management capabilities using Python. It leverages various data sources, including historical traffic data, real-time traffic updates, and sensor data, to generate accurate predictions and optimize route recommendations.
+The Navigation_using_GenAI project aims to provide route prediction and traffic management capabilities using Python. It leverages various data sources, including historical traffic data, real-time traffic updates, and sensor data, to generate accurate predictions and optimize route recommendations.
 
 The project's workflow involves several key steps:
 
