@@ -1,33 +1,31 @@
-# Navigation_using_GenAI
+# Navigation using GenAI
 
-![Demo](https://github.com/bhumikakrishnamurthy/Navigation_using_GenAI/output(1).jpeg)
----
+![Demo](https://github.com/bhumikakrishnamurthy/Navigation_using_GenAI/blob/main/output(1).jpeg)
 
-This is a Python web application that allows users to visualize traffic congestion using a heatmap and find the shortest route between two points. It uses the HERE Traffic API for traffic data and the OpenRouteService API for routing information. The application is built using Flask for the web framework and Folium for map visualization.
+## Overview
+This is a Python web application that integrates Generative AI (Gemini API) with navigation and route optimization. It allows users to:
+- Convert addresses into latitude and longitude using Gemini AI.
+- Find optimized routes with fuel and pollution impact analysis.
+- Visualize traffic congestion using a heatmap.
+- Display route justifications (e.g., "16% fuel saved").
 
 ## Features
-Traffic Heatmap: Users can input coordinates (latitude and longitude) for a specific area and view a traffic heatmap that visualizes traffic congestion in that area.
-
-Shortest Route: Users can input the starting and ending coordinates, select a vehicle type (car, bicycle, or foot), and find the shortest route between the two points on the map.
+- **AI-powered Address Conversion**: Uses Gemini API to fetch lat/lng from addresses.
+- **Traffic Heatmap**: Visualizes traffic congestion in a selected area.
+- **Route Optimization**: Computes shortest routes using OpenRouteService.
+- **Environmental Impact Analysis**: Calculates fuel saved and pollution reduced.
 
 ## Prerequisites
-Before running the application, make sure you have the following:
-
-Python 3.x installed on your system.
-
-Required Python packages installed. You can install them using pip:
-
-
-
-```
-pip install folium flask requests openrouteservice herepy
-```
+Ensure you have:
+- **Python 3.x** installed on your system.
+- Required dependencies installed (see below).
 
 ## Getting Started
 
 ## Steps to Use the Project
 
 To use the Navigation_using_GenAIt, follow these steps:
+
 
 1. Clone the GitHub project by running the following command in your terminal:
    ```bash
@@ -57,6 +55,23 @@ Open your web browser and go to http://localhost:5000 to access the application.
 ***Note:*** *Before running the application, make sure you have the following:*
 
 - *Python 3.x installed on your system.*
+
+####Configuration
+
+-Update the following API keys in app.py before running:
+
+   -Gemini API Key
+   -OpenRouteService API Key
+   -HERE Traffic API Key
+   
+-Usage
+
+   -Enter the starting and destination addresses.
+   -Choose your vehicle type (car, truck, cyclist, etc.).
+   -Click "Find Route" to visualize:
+   -The shortest route on the map.
+   -Traffic congestion via a heatmap.
+   -Fuel saved & pollution reduction.
 ---
 ### Traffic Heatmap:
 
