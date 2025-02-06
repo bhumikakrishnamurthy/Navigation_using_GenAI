@@ -55,15 +55,16 @@ Open your web browser and go to http://localhost:5000 to access the application.
 ***Note:*** *Before running the application, make sure you have the following:*
 
 - *Python 3.x installed on your system.*
+  
 
-Configuration
+##Configuration
 
--Update the following API keys in app.py before running:
+Update the following API keys in app.py before running:
 
-   -Gemini API Key
-   -OpenRouteService API Key
-   -HERE Traffic API Key
-   
+   Gemini API Key
+   OpenRouteService API Key
+   HERE Traffic API Key
+      
 -Usage
 
    -Enter the starting and destination addresses.
