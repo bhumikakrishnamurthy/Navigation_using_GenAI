@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Traffic Heatmap</title>
+    <title>EcoRoute Maps</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -64,7 +64,7 @@
 <body>
     <div class="container">
         <div class="form-container">
-            <h1>EcoRouteMap</h1>
+            <h1>EcoRoute Maps</h1>
             <form action="/" method="POST">
                 <label for="start">Starting Location:</label>
                 <input type="text" id="start" name="start" value="{{ request.form['start'] if request.form.get('start') else '' }}" required>
@@ -90,9 +90,9 @@
                 
                 <label for="vehicle_type">Vehicle Type:</label>
                 <select name="vehicle_type" id="vehicle_type">
-                    <option value="driving-car">Car</option>
-                    <option value="driving-hgv">Truck</option>
-                    <option value="driving-car">Two Wheeler</option>
+                    <option value="cycling-electric">Car</option>
+                    <option value="cycling-electric">Truck</option>
+                    <option value="cycling-electric">Two Wheeler</option>
                     <option value="cycling-electric">Electric Vehicles</option>
                     <option value="cycling-regular">Bicycle</option>
                     <option value="foot-walking">Walking</option>
@@ -106,9 +106,24 @@
             {% if duration %}
             <p><strong>Estimated travel time:</strong> {{ duration }}</p>
             {% endif %}
+            
             {% if justification %}
             <p><strong>Why this route?</strong> {{ justification }}</p>
             {% endif %}
+           
+                    <div class="legend-color" style="background-color: red;"></div>
+                    <span>High Traffic</span>
+                    <div class="legend-color" style="background-color: orange;"></div>
+                    <span>Moderate Traffic</span>
+               
+                    <div class="legend-color" style="background-color: yellow;"></div>
+                    <span>Low Traffic</span>
+                
+                    <div class="legend-color" style="background-color: green;"></div>
+                    <span>No Traffic/Optimal</span>
+              
+            
+            
 
         </div>
         <div class="map-container" >
