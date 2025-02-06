@@ -56,7 +56,7 @@ Open your web browser and go to http://localhost:5000 to access the application.
 
 - *Python 3.x installed on your system.*
 
-####Configuration
+Configuration
 
 -Update the following API keys in app.py before running:
 
