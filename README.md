@@ -19,7 +19,22 @@ This is a Python web application that integrates Generative AI (Gemini API) with
 Ensure you have:
 - **Python 3.x** installed on your system.
 - Required dependencies installed (see below).
+- Update the following API keys in app.py before running:
 
+     **Gemini API Key**
+     **OpenRouteService API Key**
+     **HERE Traffic API Key**
+      
+-Usage
+
+   **Enter the starting and destination addresses.**
+   **Choose your vehicle type (car, truck, cyclist, etc.).**
+   **Click "Find Route" to visualize:**
+   **The shortest route on the map.**
+   **Traffic congestion via a heatmap.**
+   **Fuel saved & pollution reduction.**
+
+   
 ## Getting Started
 
 ## Steps to Use the Project
@@ -55,8 +70,8 @@ Open your web browser and go to http://localhost:5000 to access the application.
 ***Note:*** *Before running the application, make sure you have the following:*
 
 - *Python 3.x installed on your system.*
-  
 
+  
 ##Configuration
 
 Update the following API keys in app.py before running:
